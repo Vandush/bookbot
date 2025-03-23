@@ -5,6 +5,7 @@ def get_book_text(filepath):
 
 from stats import wordCount
 from stats import characterCount
+from stats import characterSort
 
 def main():
     path = "books/frankenstein.txt"
@@ -12,6 +13,8 @@ def main():
     text = (get_book_text(path))
     word_count = wordCount(text)
     character_count = characterCount(text)
-    print(f"{word_count} words found in the document")
-    print(character_count)
+    print(f"Found {word_count} total words")
+    #print(character_count)
+    #characterSort(character_count)
+    print(characterSort(character_count))
 main()
