@@ -31,7 +31,6 @@ def characterSort(characters):
         newList.append(newPairs)
     newList.sort(reverse=True, key=sort_on)
     for d in newList:
-        #print(d["character"])
         c = f"{d["character"]}: {d["num"]}"
         result.append(c)
     return result
